@@ -1,8 +1,14 @@
 
-function Button({ title, Index, setClickIndex, isToggled }) {
+function Button({ title, index, setClickIndex, clickIndex }) {
 
+    const isToggled = clickIndex === index;
     const clickHandler = () => {
-        setClickIndex(Index);
+        if(isToggled){
+            setClickIndex(0);
+        }
+        else{
+            setClickIndex(index);
+        }
     }
     const btnClass = isToggled ? 'btn-warning' : 'btn-primary';
 

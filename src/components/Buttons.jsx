@@ -6,9 +6,9 @@ function Buttons({ languages, clickIndex, setClickIndex }) {
             {languages.map(language => <Button
                 key={language.id}
                 title={language.title}
-                Index={language.id}
+                index={language.id}
+                clickIndex={clickIndex}
                 setClickIndex={setClickIndex}
-                isToggled={clickIndex === language.id}
             />)}
         </div>
     )

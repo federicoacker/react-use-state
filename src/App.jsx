@@ -7,7 +7,7 @@ import { languages } from "./utils/languages.js";
 import { useState } from "react";
 
 function App() {
-  const [clickIndex, setClickIndex] = useState(0);
+  const [clickIndex, setClickIndex] = useState(1);
   console.log(clickIndex);
   return (
     <>
