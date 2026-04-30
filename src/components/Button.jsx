@@ -1,7 +1,7 @@
 
-function Button() {
+function Button({title}) {
   return (
-    <div>Button</div>
+    <button className="btn btn-primary">{ title }</button>
   )
 }
 
