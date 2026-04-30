@@ -11,11 +11,11 @@ function App() {
   console.log(clickIndex);
   return (
     <>
-    <Header/>
-    <Container>
-        <Buttons languages={ languages } clickIndex={clickIndex} setClickIndex={setClickIndex}/>
-        <LanguageCards languages={ languages } clickIndex={clickIndex}/>
-    </Container>
+      <Header />
+      <Container>
+        <Buttons languages={languages} clickIndex={clickIndex} setClickIndex={setClickIndex} />
+        <LanguageCards languages={languages} clickIndex={clickIndex} />
+      </Container>
     </>
   );
 }
