@@ -14,7 +14,7 @@ function App() {
     <Header/>
     <Container>
         <Buttons languages={ languages } clickIndex={clickIndex} setClickIndex={setClickIndex}/>
-        <LanguageCards languages={ languages }/>
+        <LanguageCards languages={ languages } clickIndex={clickIndex}/>
     </Container>
     </>
   );
