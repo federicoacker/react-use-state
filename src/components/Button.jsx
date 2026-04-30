@@ -1,7 +1,8 @@
 
-function Button({title}) {
+function Button({title, clickState}) {
+    const btnClass = clickState ? 'btn-warning' : 'btn-primary'
   return (
-    <button className="btn btn-primary">{ title }</button>
+    <button className={`btn ${btnClass}`}>{ title }</button>
   )
 }
 
