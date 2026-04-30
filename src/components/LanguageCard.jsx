@@ -1,7 +1,13 @@
+import Card from "react-bootstrap/Card";
+import CardTitle from "react-bootstrap/CardTitle";
+import CardBody from "react-bootstrap/CardBody";
 
-function LanguageCard() {
+function LanguageCard({title, description}) {
   return (
-    <div>LanguageCard</div>
+    <Card className="my-2">
+        <CardTitle className="px-3 pt-4">{title}</CardTitle>
+        <CardBody>{description}</CardBody>
+    </Card>
   )
 }
 

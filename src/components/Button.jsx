@@ -1,8 +1,15 @@
+import { useState } from "react"
 
-function Button({title, clickState}) {
+function Button({title}) {
+    const [clickState, setClickState] = useState(false);
+
+    const clickHandler = () => {
+        setClickState(!clickState);
+    }
+
     const btnClass = clickState ? 'btn-warning' : 'btn-primary'
   return (
-    <button className={`btn ${btnClass}`}>{ title }</button>
+    <button onClick={clickHandler} className={`btn ${btnClass}`}>{ title }</button>
   )
 }
 
